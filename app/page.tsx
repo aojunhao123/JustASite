@@ -8,6 +8,7 @@ import {
 } from "react-icons/si";
 import BlogPostPreview from "@/components/BlogPostPreview";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import AnimatedAvatar from "@/components/AnimatedAvatar";
 import * as motion from "framer-motion/client";
 
 const skills = [
@@ -68,15 +69,11 @@ export default function Home() {
           className="flex flex-col items-center space-y-8"
           variants={containerVariants}
         >
-          <motion.div
-            variants={itemVariants}
-            className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg"
-          >
-            <Image
-              src="/profile-picture.jpg"
-              alt="Profile Picture"
-              layout="fill"
-              objectFit="cover"
+          <motion.div variants={itemVariants}>
+            <AnimatedAvatar
+              src="/profile-picture.jpeg"
+              alt="Your Name"
+              size={192}
             />
           </motion.div>
           <motion.h1
