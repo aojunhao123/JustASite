@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary-light: #e0f7fa;
+    --color-primary: #00acc1;
+    --color-primary-dark: #007c91;
+    /* 其他CSS变量 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade {
+    animation: fadeIn 1s ease-in-out;
+}
