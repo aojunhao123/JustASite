@@ -41,6 +41,7 @@ export default function AnimatedAvatar({
             alt={alt}
             width={size}
             height={size}
+            priority
             className="rounded-full transition-transform duration-300 group-hover:scale-110"
           />
         </motion.div>

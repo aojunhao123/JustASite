@@ -57,7 +57,7 @@ const itemVariants = {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-white overflow-hidden transition-colors duration-300">
+    <div className="relative min-h-screen  from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-white overflow-hidden transition-colors duration-300">
       <ParticlesBackground />
       <motion.main
         className="container mx-auto px-4 py-16 relative z-10"

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,10 +21,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="min-h-screen bg-background text-foreground transition-colors duration-500">
-            <nav className="fixed top-4 right-4 z-50">
-              <ThemeToggle />
-            </nav>
+          <div className="min-h-screen bg-background dark:bg-dark-bg text-foreground dark:text-dark-fg">
+            <Navbar />
             {children}
             <ScrollToTopButton />
           </div>

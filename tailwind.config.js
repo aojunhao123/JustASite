@@ -20,6 +20,9 @@ module.exports = {
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
                 border: "hsl(var(--border))",
+                // 添加新的颜色变量
+                'dark-bg': 'hsl(var(--dark-bg))',
+                'dark-fg': 'hsl(var(--dark-fg))',
             },
             keyframes: {
                 "accordion-down": {
